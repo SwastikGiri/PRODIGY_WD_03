@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(-225deg, #353134 0%, #2b7b7c 52%, #193e15 100%);
+    overflow: hidden;
+}
+.container{
+    height: 95vmin;
+    width: 100%;
+    margin: 1vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container .winner{
+    font-size: 3rem;
+    color: azure;
+    font-weight: 800;
+}
+span{
+    color: #f48c06;
+}
+.container h1{
+    font-size: 7vmin;
+    color: #94d2bd;
+    margin-bottom: 1rem;
+}
+.game{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 60vmin;
+    width: 60vmin;
+}
+.box{
+    font-size: 4vmax;
+    width: 18vmin;
+    height: 18vmin;
+    border: none;
+    border-radius: 3vmin;
+    color: black;
+    background-color: #80ed99;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    transition: .5s;
+}
+.box:hover{
+    background-color: #0d1b2a;
+    color: aliceblue;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(255, 255, 255, 0.308);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(255, 255, 255, 0.308);
+    box-shadow: 10px 10px 5px 0px rgba(255, 255, 255, 0.308);
+}
+.newgame,.reset{
+    background: #2ec4b6;
+    margin: 1rem;
+    padding: 2px;
+    border: none;
+    font-size: 1rem;
+    border-radius: .6rem;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    height: 18vmin;
+    width: 18vmin;
+}
+.checked{
+    background-color: #f48c06;
+}
+@media screen and (max-width:1024px){
+    .box{
+        font-size: 7vmin;
+    }
+}
+@media screen and (max-width:640px){
+    .container{
+        height: 110vmin;
+    }
+    .box{
+        width: 17vmin;
+        height: 17vmin;        
+    }
+}
+@media screen and (max-width:460px){
+    .container{
+        height: 130vmin;
+    }
+    .box{
+        width: 16vmin;
+        height: 16vmin;
+    }
+    .container .winner{
+        font-size: 2rem;
+    }
+}
